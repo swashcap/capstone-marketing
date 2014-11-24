@@ -1,0 +1,61 @@
+// Colors
+
+$gray-darker:  #000000;
+$gray-dark:    #4e4c47;
+$gray:         mix($beige, $gray-darker, 45%);
+$gray-light:   mix($beige, $gray-darker, 65%);
+$gray-lighter: mix($beige, $gray-darker, 85%);
+
+// Typography
+
+$font-size-h1: 21px;
+$font-size-h2: 18px;
+$font-size-h3: 16px;
+$font-size-h4: 14px;
+$font-size-h5: 12px;
+$font-size-h6: 10px;
+
+$headings-font-weight: 500;
+$headings-line-height: 1.2;
+
+// Iconography
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// Components
+$padding-base-vertical:   8px;
+$padding-base-horizontal: 14px;
+
+$border-radius-base:      2px;
+$border-radius-large:     $border-radius-base;
+$border-radius-small:     $border-radius-base;
+
+// Grid system
+$grid-gutter-width: 40px;
+
+// Buttons
+$btn-font-weight: $headings-font-weight;
+
+// Navbar
+$navbar-height:        40px;
+$navbar-margin-bottom: 0;
+
+$navbar-border-radius: 0;
+$navbar-default-color: $gray;
+$navbar-default-bg:    $beige-light;
+
+$navbar-default-link-color:          $gray;
+$navbar-default-link-hover-color:    $gray-dark;
+$navbar-default-link-hover-bg:       transparent;
+$navbar-default-link-active-color:   $gray-darker;
+$navbar-default-link-active-bg:      $gray;
+$navbar-default-link-disabled-color: $gray-light;
+$navbar-default-link-disabled-bg:    transparent;
+
+$navbar-default-brand-color:         $gray-dark;
+$navbar-default-brand-hover-color:   $gray-darker;
+$navbar-default-brand-hover-bg:      transparent;
+
+$navbar-default-toggle-hover-bg:     transparent;
+$navbar-default-toggle-icon-bar-bg:  $gray-light;
+$navbar-default-toggle-border-color: transparent;
+
