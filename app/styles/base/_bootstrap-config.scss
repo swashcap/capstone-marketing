@@ -33,7 +33,10 @@ $border-radius-small:     $border-radius-base;
 $grid-gutter-width: 40px;
 
 // Buttons
-$btn-font-weight: $headings-font-weight;
+$btn-font-weight: 300; //$headings-font-weight;
+
+$btn-default-color: $beige-light;
+$btn-default-bg:    $gray-dark;
 
 // Navbar
 $navbar-height:        40px;

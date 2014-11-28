@@ -52,57 +52,68 @@
         </header>
 
         <main role="main">
-            <section id="intro">
+            <section id="intro" class="home-intro">
                 <div class="container-fluid">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="images/hero-xlarge.jpg" media="(min-width: 1024px)">
+                        <source srcset="images/hero-large.jpg" media="(min-width: 640px)">
+                        <source srcset="images/hero-medium.jpg" media="(min-width: 320px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="images/hero-small.jpg" alt="Screenshots of Capstone theme running on a phone, tablet and laptop">
+                    </picture>
                     <div class="row">
                         <div class="col-xs-12">
-                            <picture>
-                                <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                <source srcset="images/hero-xlarge.jpg" media="(min-width: 1024px)">
-                                <source srcset="images/hero-large.jpg" media="(min-width: 640px)">
-                                <source srcset="images/hero-medium.jpg" media="(min-width: 320px)">
-                                <!--[if IE 9]></video><![endif]-->
-                                <img srcset="images/hero-small.jpg" alt="Screenshots of Capstone theme running on a phone, tablet and laptop">
-                            </picture>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
                             <h1>Introduction <b>Capstone</b></h1>
                             <h2>A WordPress theme especially designed for photography portfolio websites.</h2>
-                            <a href="http://capstone.swashcap.com/demo/" class="btn btn-primary">Visit the Demo</a>
+                            <a href="http://capstone.swashcap.com/demo/" class="btn btn-default">Visit the Demo</a>
+                            <a href="#download" class="btn btn-default">Download the Theme</a>
                         </div>
                     </div><!-- .row -->
                 </div><!-- .container-fluid -->
             </section>
-            <section id="features" class="container-fluid">
-                <h1 class="text-center">Packed Full of Features</h1>
+            <section id="features" class="home-features section container-fluid">
+                <h1>Packed Full of Features</h1>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h2>Desktops, Phones and In-between.</h2>
+                    <div class="features__section--responsive col-xs-12 col-sm-6 col-md-4">
+                        <span class="icon"></span>
+                        <h2>Desktops, Phones, In-between</h2>
                         <p>The theme looks great on mobiles, tablets, and even home PCs. Using responsive design, content is displayed in the best manner so you’re able to reach out to your visitors no matter how they visit your site.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="features__section--work col-xs-12 col-sm-6 col-md-4">
+                        <span class="icon"></span>
                         <h2>Easily Organize Your Work</h2>
                         <p>Using the power of WordPress, the theme allows for easy creation and editing of portfolio items.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="features__section--design col-xs-12 col-sm-6 col-md-4">
+                        <span class="icon"></span>
                         <h2>Designed For Pictures</h2>
                         <p>to let photos shine</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="features__section--testimonials col-xs-12 col-sm-6 col-md-4">
+                        <span class="icon"></span>
                         <h2>What Did They Say?</h2>
                         <p>Visitors need to be able to trust you. That’s why client testimonials play a central role in Capstone. Testimonials are easy to control and reinforce your outstanding qualities.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="features__section--callouts col-xs-12 col-sm-6 col-md-4">
+                        <span class="icon"></span>
                         <h2>Always Be Converting</h2>
-                        <p>The main goal of your website is to get clients! Capstone features callout areas designed to move visitors to the your _Contact_ page.</p>
+                        <p>The main goal of your website is to get clients! Capstone features callout areas designed to move visitors to the your <em>Contact</em> page.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="features__section--code col-xs-12 col-sm-6 col-md-4">
+                        <span class="icon"></span>
+                        <h2>A Solid Foundation</h2>
+                        <p>Bla</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8">
                         <h2>And Much More…</h2>
-                        <p>The theme takes advantage of the WordPress platform with custom widgets
+                        <p>The theme takes advantage of the WordPress platform with custom widgets</p>
                     </div>
                 </div>
             </section>
-            <section id="download">
+            <section id="download" class="home-download section">
                 <div class="container-fluid">
                     <h1>Get It!</h1>
 
@@ -111,7 +122,7 @@
                     <p>There’s a few additional steps necessary to get the theme up and running. Please refer to the <a href="#">Getting Started</a> guide.</p>
                 </div>
             </section>
-            <section id="docs-and-support" class="container-fluid">
+            <section id="docs-and-support" class="section docs-and-support container-fluid">
                 <h1>Documentation &amp; Support</h1>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4">
@@ -129,11 +140,11 @@
                 </div>
             </section>
             </section>
-            <section id="pro" class="container-fluid">
+            <section id="pro" class="home-pro section container-fluid">
                 <h1><b>Capstone</b> Pro</h1>
                 <p class="lead">More features. Coming soon.</p>
             </section>
-            <section id="newsletter">
+            <section id="newsletter" class="home-newsletter section">
                 <div class="container-fluid">
                     <h1>Newsletter</h1>
                     <p class="lead">Interested in Capstone Pro? Want to keep up on theme updates? Sign up for the newsletter:</p>

@@ -1,0 +1,47 @@
+// _section.scss
+
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    h1 {
+        font-size: 24px;
+        font-weight: 300;
+        margin: 0 0 2rem;
+        text-align: center;
+    }
+
+    @media (min-width: $screen-xs) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 4rem;
+        }
+    }
+    @media (min-width: $screen-sm) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        h1 {
+            font-size: 36px;
+        }
+    }
+    @media (min-width: $screen-md) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+
+        h1 {
+            margin-bottom: 6rem;
+        }
+    }
+    @media (min-width: $screen-lg) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        h1 {
+            font-size: 48px;
+        }
+    }
+}

@@ -4,3 +4,7 @@ $beige:       #f1e7da;
 $beige-light: #f3ede4;
 
 $white:       #ffffff;
+
+// Media Queries
+$retina: '(-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)';
+$super-retina: 'print, (-o-min-device-pixel-ratio: 4), (-webkit-min-device-pixel-ratio: 4), (min-resolution: 400dpi)';
