@@ -8,56 +8,11 @@
 @import 'base/defaults';
 
 @import 'module/btn';
-@import 'module/features';
 @import 'module/navbar';
 @import 'module/section';
 
-#intro {
-    background: $beige;
-    padding-top: $navbar-height;
-    padding-bottom: $grid-gutter-width;
-
-    @media (min-width: $screen-sm) {
-        overflow: hidden;
-        padding-top: 80px;
-        position: relative;
-
-        .row {
-            padding-top: 100px;
-            padding-bottom: 150px;
-        }
-
-        picture {
-            opacity: .5;
-            height: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 100%;
-        }
-    }
-
-    h1 {
-        @media (min-width: $screen-xs) {
-            font-size: 24px;
-        }
-        @media (min-width: $screen-sm) {
-            font-size: 28px;
-        }
-        @media (min-width: $screen-md) {
-            font-size: 36px;
-        }
-        @media (min-width: $screen-lg) {
-            font-size: 48px;
-        }
-    }
-    h2 {
-        font-weight: 300;
-        font-size: 100%;
-        line-height: $line-height-base;
-
-        @media (min-width: $screen-sm) {
-            font-size: 16px;
-        }
-    }
-}
+@import 'layout/home/home-download';
+@import 'layout/home/home-features';
+@import 'layout/home/home-intro';
+@import 'layout/home/home-newsletter';
+@import 'layout/home/home-pro';

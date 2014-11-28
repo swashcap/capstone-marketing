@@ -1,7 +1,15 @@
-// _features.scss
+/* ==========================================================================
+   Home Features
+   ========================================================================== */
 
-// Sections
-%features__section {
+.home-features {
+
+}
+
+/* Sections
+   ========================================================================== */
+
+%home-features__section {
     margin: 0 0 2rem;
 
     .icon {
@@ -98,26 +106,26 @@
     }
 }
 
-.features__section--responsive,
-.features__section--work,
-.features__section--design,
-.features__section--testimonials,
-.features__section--callouts,
-.features__section--code {
-    @extend %features__section;
+.home-features__section--responsive,
+.home-features__section--work,
+.home-features__section--design,
+.home-features__section--testimonials,
+.home-features__section--callouts,
+.home-features__section--code {
+    @extend %home-features__section;
 }
-.features__section--work .icon:before {
+.home-features__section--work .icon:before {
     background-position: -40px 0;
 }
-.features__section--design .icon:before {
+.home-features__section--design .icon:before {
     background-position: -80px 0;
 }
-.features__section--testimonials .icon:before {
+.home-features__section--testimonials .icon:before {
     background-position: -120px 0;
 }
-.features__section--callouts .icon:before {
+.home-features__section--callouts .icon:before {
     background-position: -160px 0;
 }
-.features__section--code .icon:before {
+.home-features__section--code .icon:before {
     background-position: -200px 0;
 }
