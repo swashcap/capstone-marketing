@@ -1,7 +1,48 @@
+/* ==========================================================================
+   Btn
+   ========================================================================== */
+
 .btn {
     border: none;
+    text-decoration: none;
 
+    &:focus,
+    &:hover,
+    &:active {
+        color: $white;
+    }
     &:active {
         box-shadow: none;
+    }
+}
+
+.btn-default {
+    &:focus,
+    &:hover {
+        background: mix($gray-light, $gray-darker);
+    }
+    &:active {
+        background: $gray-darker;
+    }
+}
+.btn-primary {
+    &:focus,
+    &:hover {
+        background: mix($gray-dark, $gray-darker);
+    }
+    &:active {
+        background: $gray-darker;
+    }
+}
+
+.btn-lg {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    padding: $padding-base-vertical $padding-base-horizontal;
+
+    @media (min-width: $screen-sm) {
+        font-size: $font-size-large;
+        line-height: $line-height-large;
+        padding: $padding-large-vertical $padding-large-horizontal;
     }
 }

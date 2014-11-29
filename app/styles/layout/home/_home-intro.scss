@@ -4,50 +4,90 @@
 
 .home-intro {
     background: $beige;
-    padding-top: $navbar-height;
-    padding-bottom: $grid-gutter-width;
-
-    @media (min-width: $screen-sm) {
-        overflow: hidden;
-        padding-top: 80px;
-        position: relative;
-
-        .row {
-            padding-top: 100px;
-            padding-bottom: 150px;
-        }
-
-        picture {
-            opacity: .5;
-            height: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 100%;
-        }
-    }
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    text-align: center;
 
     h1 {
-        @media (min-width: $screen-xs) {
-            font-size: 24px;
-        }
-        @media (min-width: $screen-sm) {
-            font-size: 28px;
-        }
-        @media (min-width: $screen-md) {
-            font-size: 36px;
-        }
-        @media (min-width: $screen-lg) {
-            font-size: 48px;
-        }
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0 0 .25em;
     }
     h2 {
         font-weight: 300;
-        font-size: 100%;
+        font-size: $font-size-base;
         line-height: $line-height-base;
+        margin: 0 0 2rem;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
 
-        @media (min-width: $screen-sm) {
-            font-size: 16px;
+    @media (min-width: $screen-xs) {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+
+        h1 {
+            font-size: 36px;
         }
+        h2 {
+            font-size: $font-size-h3;
+            margin-bottom: 4rem;
+        }
+    }
+    @media (min-width: $screen-sm) {
+        padding-top: 14rem;
+        padding-bottom: 6rem;
+
+        h1 {
+            font-size: 48px;
+        }
+        h2 {
+            font-size: $font-size-h2;
+            margin-bottom: 6rem;
+        }
+        img {
+            width: 83.33%;
+        }
+    }
+    @media (min-width: $screen-md) {
+        padding-top: 16rem;
+        padding-bottom: 8rem;
+
+        h1 {
+            font-size: 56px;
+        }
+        h2 {
+            font-size: $font-size-h1;
+            margin-bottom: 8rem;
+        }
+    }
+    @media (min-width: $screen-lg) {
+        padding-top: 18rem;
+        padding-bottom: 10rem;
+
+        h1 {
+            font-size: 60px;
+        }
+        h2 {
+            margin-bottom: 10rem;
+        }
+        img {
+            width: 75%;
+        }
+    }
+}
+.home-intro__buttons {
+    margin-top: 2rem;
+
+    @media (min-width: $screen-xs) {
+        margin-top: 4rem;
+    }
+    @media (min-width: $screen-sm) {
+        margin-top: 6rem;
+    }
+    @media (min-width: $screen-lg) {
+        margin-top: 8rem;
     }
 }

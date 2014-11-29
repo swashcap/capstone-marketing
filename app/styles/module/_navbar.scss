@@ -1,5 +1,13 @@
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
 .navbar {
     border: none;
+
+    a {
+        text-decoration: none;
+    }
 
     @media (min-width: $screen-sm) {
         min-height: 80px;
@@ -45,18 +53,21 @@
     @media (min-width: $screen-sm) {
         > li > a {
             line-height: 60px;
+            transition:
+                background 125ms ease-in-out,
+                color 125ms ease-in-out;
         }
         > li.demo {
             margin: 22px ($grid-gutter-width / 2) 0 10px;
             padding: 0;
 
             > a {
-                background: $gray;
+                background: $gray-light;
                 border-radius: $border-radius-base;
                 color: $beige-light;
-                font-weight: $headings-font-weight;
                 line-height: $line-height-base;
                 padding: $padding-base-vertical $padding-base-horizontal;
+                transition: none;
 
                 &:focus,
                 &:hover {
@@ -64,6 +75,31 @@
                     background: $gray-darker;
                 }
             }
+        }
+    }
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    @media (min-width: $screen-sm) {
+        background: $gray;
+        background: rgba($gray-darker, .25);
+        color: $white;
+    }
+}
+
+/* State
+   ========================================================================== */
+
+.js {
+    @media (min-width: $screen-sm) {
+        .navbar-default {
+            background: rgba($beige-light, 0);
+            transition: background 500ms ease-in-out;
+        }
+        .is-scrolled.navbar-default {
+            background: $beige-light;
+            background: rgba($beige-light, .85);
         }
     }
 }

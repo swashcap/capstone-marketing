@@ -22,8 +22,11 @@ $headings-line-height: 1.2;
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 // Components
-$padding-base-vertical:   8px;
-$padding-base-horizontal: 14px;
+$padding-base-vertical:    8px;
+$padding-base-horizontal:  14px;
+
+$padding-large-vertical:   12px;
+$padding-large-horizontal: 24px;
 
 $border-radius-base:      2px;
 $border-radius-large:     $border-radius-base;
@@ -36,7 +39,10 @@ $grid-gutter-width: 40px;
 $btn-font-weight: 300; //$headings-font-weight;
 
 $btn-default-color: $beige-light;
-$btn-default-bg:    $gray-dark;
+$btn-default-bg:    $gray-light;
+
+$btn-primary-color: $beige-light;
+$btn-primary-bg:    $gray-dark;
 
 // Navbar
 $navbar-height:        40px;
@@ -50,7 +56,7 @@ $navbar-default-link-color:          $gray;
 $navbar-default-link-hover-color:    $gray-dark;
 $navbar-default-link-hover-bg:       transparent;
 $navbar-default-link-active-color:   $gray-darker;
-$navbar-default-link-active-bg:      $gray;
+$navbar-default-link-active-bg:      $gray-lighter;
 $navbar-default-link-disabled-color: $gray-light;
 $navbar-default-link-disabled-bg:    transparent;
 

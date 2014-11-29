@@ -2,15 +2,18 @@
 @import 'base/bootstrap-config';
 
 // bower:scss
-@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 @import 'base/defaults';
 
 @import 'module/btn';
+@import 'module/lead';
 @import 'module/navbar';
 @import 'module/section';
+@import 'module/site-footer';
 
+@import 'layout/home/home-docs';
 @import 'layout/home/home-download';
 @import 'layout/home/home-features';
 @import 'layout/home/home-intro';

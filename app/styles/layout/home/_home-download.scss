@@ -3,5 +3,47 @@
    ========================================================================== */
 
 .home-download {
-    background: $beige-light;
+    background: $gray-dark;
+    color: $beige-light;
+
+    a {
+        color: $beige-light;
+
+        &:focus,
+        &:hover {
+            color: mix($beige-light, $white);
+        }
+        &:active {
+            color: $white;
+        }
+    }
+    .btn-primary {
+        background: $beige;
+        color: $gray;
+
+        &:focus,
+        &:hover {
+            background: mix($beige, $white);
+            color: $gray-darker;
+        }
+        &:active {
+            background: $white;
+            color: $gray-darker;
+        }
+    }
 }
+.home-download__button {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @media (min-width: $screen-xs) {
+        margin-bottom: 4rem;
+    }
+    @media (min-width: $screen-md) {
+        margin-bottom: 6rem;
+    }
+}
+.home-download__details {
+    color: mix($gray-light, $gray-lighter);
+}
+

@@ -1,3 +1,19 @@
+/* ==========================================================================
+   Defaults
+   ========================================================================== */
+
+a {
+    color: $gray-darker;
+    text-decoration: underline;
+
+    &:focus,
+    &:hover {
+        color: $gray-dark;
+    }
+    &:active {
+        color: $gray;
+    }
+}
 b,
 strong {
     font-weight: 500;

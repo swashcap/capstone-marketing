@@ -3,5 +3,21 @@
    ========================================================================== */
 
 .home-newsletter {
+    background: $beige-light;
 
+    label {
+        color: $gray;
+        display: block;
+        font-weight: 300;
+    }
+    .form-control {
+        background: $white;
+        border: thin solid $gray-lighter;
+        box-shadow: none;
+        color: $gray-dark;
+        font-weight: 500;
+    }
+    button[type='submit'] {
+        margin-bottom: 2rem;
+    }
 }

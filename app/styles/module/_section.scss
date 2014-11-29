@@ -6,35 +6,43 @@
 
     h1 {
         font-size: 24px;
-        font-weight: 300;
-        margin: 0 0 2rem;
+        margin: 0;
         text-align: center;
     }
-
+    .lead {
+        margin: .5em 0 0;
+        text-align: center;
+    }
+    h2 {
+        font-size: $font-size-h3;
+        margin: 0 0 .25em;
+    }
     @media (min-width: $screen-xs) {
         padding-top: 4rem;
         padding-bottom: 4rem;
 
         h1 {
             font-size: 28px;
-            margin-bottom: 4rem;
+        }
+        h2 {
+            font-size: $font-size-h2;
         }
     }
     @media (min-width: $screen-sm) {
+        font-size: 16px;
         padding-top: 6rem;
         padding-bottom: 6rem;
 
         h1 {
             font-size: 36px;
         }
+        .lead {
+            margin-top: 1em;
+        }
     }
     @media (min-width: $screen-md) {
         padding-top: 8rem;
         padding-bottom: 8rem;
-
-        h1 {
-            margin-bottom: 6rem;
-        }
     }
     @media (min-width: $screen-lg) {
         padding-top: 10rem;
@@ -43,5 +51,15 @@
         h1 {
             font-size: 48px;
         }
+    }
+}
+.section__header {
+    margin-bottom: 2rem;
+
+    @media (min-width: $screen-xs) {
+        margin-bottom: 4rem;
+    }
+    @media (min-width: $screen-md) {
+        margin-bottom: 6rem;
     }
 }
