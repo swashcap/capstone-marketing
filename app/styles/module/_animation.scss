@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Animation
+   ========================================================================== */
+
+.js .animation {
+    @for $i from 1 through 4 {
+        .animation__#{$i} {
+            animation-delay: ($i - 1) * 75ms;
+            opacity: 0;
+        }
+    }
+}
+
+.js .is-animated.animation {
+    .animation__1,
+    .animation__2,
+    .animation__3,
+    .animation__4 {
+        animation-name: fadeIn;
+        animation-duration: 750ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

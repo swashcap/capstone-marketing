@@ -14,7 +14,7 @@
     });
 
     /**
-     * Navbar scrolling and clicking.
+     * Navbar scrolling.
      */
     var NAVBAR_SCROLLED_CLASS = 'is-scrolled';
     var $homeIntro = $('.home-intro');
@@ -25,7 +25,19 @@
             $navbar.removeClass(NAVBAR_SCROLLED_CLASS);
         }
     };
-    var navbarScroller = function (e) {
+
+    if ($homeIntro.length) {
+        scrollHandler();
+        $window.scroll($.throttle(250, scrollHandler));
+    }
+
+    /**
+     * In-page hash link clicking.
+     */
+    var $links = $('a').filter(function (index, el) {
+        return el.getAttribute('href').indexOf('#') === 0;
+    });
+    var linkScroller = function (e) {
         var $target = $(e.target.hash);
 
         if ($target.length) {
@@ -37,9 +49,27 @@
         }
     };
 
-    if ($homeIntro.length) {
-        scrollHandler();
-        $window.scroll($.throttle(250, scrollHandler));
+    $links.click(linkScroller);
+
+    /**
+     * Animation firing with WaypointsJS.
+     * @{@link  http://imakewebthings.com/jquery-waypoints/}
+     */
+    var ANIMATION_CLASS = 'is-animated';
+    var $animationSections = $('.animation');
+    var triggerAnimation = function () {
+        var $el = $(this);
+
+        setTimeout(function () {
+            $el.addClass(ANIMATION_CLASS);
+        }, 50);
+    };
+
+    if (! Modernizr.touch && $window.width() >= 768) {
+        $animationSections.waypoint(triggerAnimation, {
+            offset: function () {
+                return Math.floor($window.height() - 0.5 * $(this).height());
+            }
+        });
     }
-    $navbar.find('.nav a').click(navbarScroller);
 }(jQuery));

@@ -6,7 +6,8 @@
     "modernizr": "~2.6.2",
     "jquery": "~1.11.0",
     "picturefill": "~2.2.0",
-    "jquery-throttle-debounce": "*"
+    "jquery-throttle-debounce": "*",
+    "jquery-waypoints": "~2.0.5"
   },
   "devDependencies": {},
   "overrides": {
