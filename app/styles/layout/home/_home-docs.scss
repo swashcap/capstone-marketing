@@ -3,5 +3,14 @@
    ========================================================================== */
 
 .home-docs {
-    background: $beige-light;
+
+}
+.home-docs__section--getting-started .icon:before {
+    background-position: -240px 0;
+}
+.home-docs__section--documentation .icon:before {
+    background-position: -280px 0;
+}
+.home-docs__section--support .icon:before {
+    background-position: -320px 0;
 }

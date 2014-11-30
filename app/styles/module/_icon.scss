@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Icon
+   ========================================================================== */
+
+.icon {
+    background: $beige-light;
+    border-radius: 50%;
+    display: block;
+    height: 8rem;
+    margin: 0 auto 1rem;
+    position: relative;
+    width: 8rem;
+
+    &:before {
+        background: url(../images/sprite.png) no-repeat;
+        content: '';
+        display: block;
+        height: 40px;
+        left: 50%;
+        margin: -20px 0 0 -20px;
+        position: absolute;
+        top: 50%;
+        width: 40px;
+
+        @media #{$retina} {
+            background-image: url(../images/sprite@2x.png);
+            background-size: 360px auto;
+        }
+        @media #{$super-retina} {
+            background-image: url(../images/sprite@3x.png);
+        }
+    }
+    @media (min-width: $screen-xs) {
+        .icon {
+            float: left;
+            margin-bottom: 0;
+        }
+    }
+    @media (min-width: $screen-sm) {
+        float: none;
+        height: 10rem;
+        margin-bottom: 2rem;
+        width: 10rem;
+    }
+    @media (min-width: $screen-lg) {
+        height: 12rem;
+        width: 12rem;
+    }
+}
