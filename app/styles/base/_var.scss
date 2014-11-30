@@ -6,5 +6,5 @@ $beige-light: #f3ede4;
 $white:       #ffffff;
 
 // Media Queries
-$retina: '(-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)';
-$super-retina: 'print, (-o-min-device-pixel-ratio: 4), (-webkit-min-device-pixel-ratio: 4), (min-resolution: 400dpi)';
+$retina: '(-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx)';
+$super-retina: 'print, (-o-min-device-pixel-ratio: 4), (-webkit-min-device-pixel-ratio: 4), (min-resolution: 400dpi), (min-resolution: 4dppx)';
