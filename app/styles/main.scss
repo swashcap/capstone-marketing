@@ -2,11 +2,29 @@
 @import 'base/bootstrap-config';
 
 // bower:scss
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_normalize.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_print.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_type.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_code.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_grid.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_forms.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_buttons.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_component-animations.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_dropdowns.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_button-groups.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_input-groups.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navs.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_utilities.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_responsive-utilities.scss";
 // endbower
 
 @import 'base/defaults';
 
+@import 'module/animation';
 @import 'module/btn';
 @import 'module/icon';
 @import 'module/lead';

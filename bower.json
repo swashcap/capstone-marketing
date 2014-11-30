@@ -10,6 +10,31 @@
   },
   "devDependencies": {},
   "overrides": {
+    "bootstrap-sass-official": {
+      "main": [
+        "assets/stylesheets/bootstrap/_variables.scss",
+        "assets/stylesheets/bootstrap/_mixins.scss",
+        "assets/stylesheets/bootstrap/_normalize.scss",
+        "assets/stylesheets/bootstrap/_print.scss",
+        "assets/stylesheets/bootstrap/_scaffolding.scss",
+        "assets/stylesheets/bootstrap/_type.scss",
+        "assets/stylesheets/bootstrap/_code.scss",
+        "assets/stylesheets/bootstrap/_grid.scss",
+        "assets/stylesheets/bootstrap/_forms.scss",
+        "assets/stylesheets/bootstrap/_buttons.scss",
+        "assets/stylesheets/bootstrap/_component-animations.scss",
+        "assets/stylesheets/bootstrap/_dropdowns.scss",
+        "assets/stylesheets/bootstrap/_button-groups.scss",
+        "assets/stylesheets/bootstrap/_input-groups.scss",
+        "assets/stylesheets/bootstrap/_navs.scss",
+        "assets/stylesheets/bootstrap/_navbar.scss",
+        "assets/stylesheets/bootstrap/_utilities.scss",
+        "assets/stylesheets/bootstrap/_responsive-utilities.scss",
+        "assets/javascripts/bootstrap/dropdown.js",
+        "assets/javascripts/bootstrap/transition.js",
+        "assets/javascripts/bootstrap/scrollspy.js"
+      ]
+    },
     "jquery-throttle-debounce": {
       "main": "jquery.ba-throttle-debounce.js"
     }
