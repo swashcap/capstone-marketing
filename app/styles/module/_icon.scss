@@ -31,10 +31,8 @@
         }
     }
     @media (min-width: $screen-xs) {
-        .icon {
-            float: left;
-            margin-bottom: 0;
-        }
+        float: left;
+        margin-bottom: 0;
     }
     @media (min-width: $screen-sm) {
         float: none;
