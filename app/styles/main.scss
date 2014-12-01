@@ -38,3 +38,8 @@
 @import 'layout/home/home-intro';
 @import 'layout/home/home-newsletter';
 @import 'layout/home/home-pro';
+
+/** @todo Find a home for this rule */
+.container-fluid {
+    max-width: 1600px;
+}
