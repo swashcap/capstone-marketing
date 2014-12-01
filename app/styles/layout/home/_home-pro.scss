@@ -3,5 +3,19 @@
    ========================================================================== */
 
 .home-pro {
+    background: $beige-light;
+}
+.home-pro__button {
+    margin-top: 2rem;
+    text-align: center;
 
+    @media (min-width: $screen-xs) {
+        margin-top: 4rem;
+    }
+    @media (min-width: $screen-sm) {
+        margin-top: 6rem;
+    }
+    @media (min-width: $screen-lg) {
+        margin-top: 8rem;
+    }
 }
