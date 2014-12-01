@@ -3,8 +3,49 @@
    ========================================================================== */
 
 .home-docs {
+    .text-muted {
+        color: $gray-light;
+        font-size: $font-size-h5;
+        line-height: $headings-line-height;
+        margin: 1rem 0 0;
 
+        a {
+            color: inherit;
+            word-break: break-all;
+
+            &:focus,
+            &:hover {
+                color: $gray-dark;
+            }
+            &:active {
+                color: $gray-darker;
+            }
+        }
+
+        @media (min-width: $screen-sm) {
+            margin-top: 2rem;
+        }
+    }
 }
+
+.home-docs__section--getting-started,
+.home-docs__section--documentation,
+.home-docs__section--support {
+    text-align: center;
+
+    h2,
+    p {
+        text-align: left;
+    }
+    .btn {
+        margin-top: 1rem;
+
+        @media (min-width: $screen-sm) {
+            margin-top: 2rem;
+        }
+    }
+}
+
 .home-docs__section--getting-started .icon:before {
     background-position: -240px 0;
 }
