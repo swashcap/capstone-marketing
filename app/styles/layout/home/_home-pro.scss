@@ -4,6 +4,25 @@
 
 .home-pro {
     background: $beige-light;
+
+    img {
+        display: block;
+        margin: 0 auto 2rem auto;
+
+        @media (min-width: $screen-xs) {
+            width: 83.33%;
+        }
+        @media (min-width: $screen-sm) {
+            width: 75%;
+            margin-bottom: 4rem;
+        }
+        @media (min-width: $screen-md) {
+            margin-bottom: 6rem;
+        }
+        @media (min-width: $screen-lg) {
+            width: 66.67%;
+        }
+    }
 }
 .home-pro__button {
     margin-top: 2rem;
