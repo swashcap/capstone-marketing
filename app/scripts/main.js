@@ -72,5 +72,7 @@
                 return Math.floor($window.height() - 0.5 * $(this).height());
             }
         });
+    } else {
+        $animationSections.addClass(ANIMATION_CLASS);
     }
 }(jQuery));
