@@ -146,7 +146,15 @@
                         <h1><b>Capstone</b> Pro</h1>
                         <p class="lead">More customization and additional features. Coming soon.</p>
                     </header>
-                    <div class="row animation__2">
+                    <picture class="animation__2">
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="images/pro-xlarge.jpg" media="(min-width: 1024px)">
+                        <source srcset="images/pro-large.jpg" media="(min-width: 640px)">
+                        <source srcset="images/pro-medium.jpg" media="(min-width: 320px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="images/pro-small.jpg" alt="Screenshots of Capstone Pro in various settings">
+                    </picture>
+                    <div class="row animation__3">
                         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <p>The premiere version of Capstone offers more control over the theme’s appearance. It’s currently under development, and builds upon Capstone’s great platform. Included features:</p>
                             <ul>
@@ -160,7 +168,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="home-pro__button animation__3">
+                    <div class="home-pro__button animation__4">
                        <a href="#newsletter" class="btn btn-primary btn-lg">Get Capstone Pro Updates</a>
                     </div>
                 </div><!-- .container-fluid -->
