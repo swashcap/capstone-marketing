@@ -1,10 +1,20 @@
 /* global Modernizr */
-(function (window, $) {
+(function (window, document, $) {
     'use strict';
 
     var SCREEN_SMALL = 768;
     var $window = $(window);
     var $navbar = $('.navbar');
+
+    /**
+     * FastClick, to elimante the 300ms click delay on mobile.
+     * @{@link  https://github.com/ftlabs/fastclick}
+     */
+    if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+            FastClick.attach(document.body);
+        }, false);
+    }
 
     /**
      * Bootstrap's Scrollspy for 'active' navigation links.
@@ -96,4 +106,4 @@
     } else {
         $animationSections.addClass(ANIMATION_CLASS);
     }
-}(window, jQuery));
+}(window, document, jQuery));
