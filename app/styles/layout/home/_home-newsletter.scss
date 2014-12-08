@@ -11,10 +11,12 @@
         font-weight: 300;
     }
     .form-control {
+        -webkit-appearance: none;
         background: $white;
         border: thin solid $gray-lighter;
         box-shadow: none;
         color: $gray-dark;
+        font-size: 16px;
         font-weight: 500;
     }
     button[type='submit'] {
