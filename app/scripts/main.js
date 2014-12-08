@@ -1,4 +1,4 @@
-/* global Modernizr */
+/* global FastClick,Modernizr */
 (function (window, document, $) {
     'use strict';
 
